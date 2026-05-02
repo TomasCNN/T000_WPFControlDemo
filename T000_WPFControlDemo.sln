@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T001_Wpf入门", "T001_Wpf�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T002_Application的生命周期", "T002_Application的生命周期\T002_Application的生命周期.csproj", "{C1D416B2-868E-488F-A816-699097DD2214}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T003_VirtualizingStackPanelDemo", "T003_VirtualizingStackPanelDemo\T003_VirtualizingStackPanelDemo.csproj", "{2F82D599-F1E9-4031-9BDB-91A90750E400}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T004_VirtualizingStackPanelDemo", "T004_VirtualizingStackPanelDemo\T004_VirtualizingStackPanelDemo.csproj", "{9202DE9C-D0FF-4476-BD14-84D375432B81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{C1D416B2-868E-488F-A816-699097DD2214}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1D416B2-868E-488F-A816-699097DD2214}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1D416B2-868E-488F-A816-699097DD2214}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F82D599-F1E9-4031-9BDB-91A90750E400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F82D599-F1E9-4031-9BDB-91A90750E400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F82D599-F1E9-4031-9BDB-91A90750E400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F82D599-F1E9-4031-9BDB-91A90750E400}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9202DE9C-D0FF-4476-BD14-84D375432B81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9202DE9C-D0FF-4476-BD14-84D375432B81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9202DE9C-D0FF-4476-BD14-84D375432B81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9202DE9C-D0FF-4476-BD14-84D375432B81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
