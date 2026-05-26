@@ -1,0 +1,100 @@
+﻿<Window x:Class="T007013_WPFLayoutDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T007013_WPFLayoutDemo"
+        mc:Ignorable="d" 
+        Title="生产数据看板" Height="450" Width="800">
+    <Grid Margin="15">
+        <UniformGrid Rows="2" Columns="4">
+            <!-- 总产量卡片 -->
+            <Border Margin="8" Background="#E3F2FD" CornerRadius="6">
+                <Grid Margin="15">
+                    <StackPanel>
+                        <TextBlock Text="总产量" FontSize="14" Foreground="#1976D2" />
+                        <TextBlock Text="12589" FontSize="32" FontWeight="Bold" Margin="0 10 0 0" />
+                        <TextBlock Text="PCS" FontSize="12" Foreground="#666" />
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <!-- 良品数卡片 -->
+            <Border Margin="8" Background="#E8F5E9" CornerRadius="6">
+                <Grid Margin="15">
+                    <StackPanel>
+                        <TextBlock Text="良品数" FontSize="14" Foreground="#388E3C" />
+                        <TextBlock Text="12305" FontSize="32" FontWeight="Bold" Margin="0 10 0 0" />
+                        <TextBlock Text="PCS" FontSize="12" Foreground="#666" />
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <!-- 不良品数卡片 -->
+            <Border Margin="8" Background="#FFEBEE" CornerRadius="6">
+                <Grid Margin="15">
+                    <StackPanel>
+                        <TextBlock Text="不良品数" FontSize="14" Foreground="#D32F2F" />
+                        <TextBlock Text="284" FontSize="32" FontWeight="Bold" Margin="0 10 0 0" />
+                        <TextBlock Text="PCS" FontSize="12" Foreground="#666" />
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <!-- 良率卡片 -->
+            <Border Margin="8" Background="#FFF3E0" CornerRadius="6">
+                <Grid Margin="15">
+                    <StackPanel>
+                        <TextBlock Text="良率" FontSize="14" Foreground="#F57C00" />
+                        <TextBlock Text="97.7%" FontSize="32" FontWeight="Bold" Margin="0 10 0 0" />
+                        <TextBlock Text="%" FontSize="12" Foreground="#666" />
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <!-- 运行时间卡片 -->
+            <Border Margin="8" Background="#F3E5F5" CornerRadius="6">
+                <Grid Margin="15">
+                    <StackPanel>
+                        <TextBlock Text="运行时间" FontSize="14" Foreground="#7B1FA2" />
+                        <TextBlock Text="128.5" FontSize="32" FontWeight="Bold" Margin="0 10 0 0" />
+                        <TextBlock Text="小时" FontSize="12" Foreground="#666" />
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <!-- 报警次数卡片 -->
+            <Border Margin="8" Background="#FFFDE7" CornerRadius="6">
+                <Grid Margin="15">
+                    <StackPanel>
+                        <TextBlock Text="报警次数" FontSize="14" Foreground="#FBC02D" />
+                        <TextBlock Text="6" FontSize="32" FontWeight="Bold" Margin="0 10 0 0" />
+                        <TextBlock Text="次" FontSize="12" Foreground="#666" />
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <!-- 当前速度卡片 -->
+            <Border Margin="8" Background="#E0F7FA" CornerRadius="6">
+                <Grid Margin="15">
+                    <StackPanel>
+                        <TextBlock Text="当前速度" FontSize="14" Foreground="#0097A7" />
+                        <TextBlock Text="120" FontSize="32" FontWeight="Bold" Margin="0 10 0 0" />
+                        <TextBlock Text="件/分钟" FontSize="12" Foreground="#666" />
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <!-- 设备状态卡片 -->
+            <Border Margin="8" Background="#E8F5E9" CornerRadius="6">
+                <Grid Margin="15">
+                    <StackPanel>
+                        <TextBlock Text="设备状态" FontSize="14" Foreground="#388E3C" />
+                        <TextBlock Text="运行中" FontSize="32" FontWeight="Bold" Margin="0 10 0 0" />
+                        <TextBlock Text="正常" FontSize="12" Foreground="#666" />
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </UniformGrid>
+    </Grid>
+</Window>

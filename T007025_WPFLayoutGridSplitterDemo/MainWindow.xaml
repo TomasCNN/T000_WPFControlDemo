@@ -1,0 +1,33 @@
+﻿<Window x:Class="T007025_WPFLayoutGridSplitterDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T007025_WPFLayoutGridSplitterDemo"
+        mc:Ignorable="d" 
+        Title="水平分割示例" Height="450" Width="800">
+    <Grid>
+        <!-- 定义3行：上栏 + 分割线 + 下栏 -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="300*" MinHeight="200" />
+            <!-- 上栏 -->
+            <RowDefinition Height="Auto" />
+            <!-- 分割线行 -->
+            <RowDefinition Height="200*" MinHeight="100" />
+            <!-- 下栏 -->
+        </Grid.RowDefinitions>
+
+        <!-- 上栏内容 -->
+        <Border Grid.Row="0" Background="#000">
+            <TextBlock Text="图像显示区" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Border>
+
+        <!-- 水平分割线（核心） -->
+        <GridSplitter Grid.Row="1" Height="5" Background="#DDD" HorizontalAlignment="Stretch" VerticalAlignment="Center" ShowsPreview="True" />
+
+        <!-- 下栏内容 -->
+        <Border Grid.Row="2" Background="#F5F6F8">
+            <TextBlock Text="日志输出区" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Border>
+    </Grid>
+</Window>

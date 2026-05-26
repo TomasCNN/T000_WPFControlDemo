@@ -1,0 +1,48 @@
+﻿<Window x:Class="T007023_WPFLayoutCanvas_StackPanelMarginDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T007023_WPFLayoutCanvas_StackPanelMarginDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="20" Background="White" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <!-- 上料工位 -->
+            <Border Width="120" Height="80" Background="#E3F2FD" CornerRadius="4">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBlock Text="上料工位" FontWeight="Bold" Margin="0,0,0,10" />
+                    <StackPanel Orientation="Horizontal">
+                        <Ellipse Width="8" Height="8" Fill="Green" Margin="0,0,3,0" />
+                        <TextBlock Text="有料" FontSize="11" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <!-- 传送带：用负Margin向上偏移，覆盖在中间 -->
+            <Border Height="20" Background="#90CAF9" Width="320" Margin="0,-30,0,-30" />
+
+            <!-- 检测工位：用负Margin向左偏移，覆盖在传送带上 -->
+            <Border Width="120" Height="80" Background="#E8F5E9" CornerRadius="4" Margin="-300,0,0,0">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBlock Text="检测工位" FontWeight="Bold" Margin="0,0,0,10" />
+                    <StackPanel Orientation="Horizontal">
+                        <Ellipse Width="8" Height="8" Fill="Red" Margin="0,0,3,0" />
+                        <TextBlock Text="检测中" FontSize="11" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <!-- 下料工位 -->
+            <Border Width="120" Height="80" Background="#FFF3E0" CornerRadius="4">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBlock Text="下料工位" FontWeight="Bold" Margin="0,0,0,10" />
+                    <StackPanel Orientation="Horizontal">
+                        <Ellipse Width="8" Height="8" Fill="Green" Margin="0,0,3,0" />
+                        <TextBlock Text="空闲" FontSize="11" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Window>

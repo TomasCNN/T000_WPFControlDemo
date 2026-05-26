@@ -1,0 +1,37 @@
+﻿<Window x:Class="T007015_WPFLayoutDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T007015_WPFLayoutDemo"
+        mc:Ignorable="d" 
+        Title="数据趋势图" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- 顶部工具栏 -->
+        <Border Background="#F5F5F5" CornerRadius="4">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="10 0">
+                <TextBlock Text="显示曲线:" VerticalAlignment="Center" Margin="0 0 5 0" />
+                <CheckBox Content="温度" IsChecked="True" Margin="0 0 10 0" />
+                <CheckBox Content="压力" IsChecked="True" Margin="0 0 10 0" />
+                <CheckBox Content="速度" IsChecked="False" Margin="0 0 20 0" />
+
+                <Button Content="开始" Width="60" Height="25" Margin="0 0 10 0" />
+                <Button Content="停止" Width="60" Height="25" Margin="0 0 10 0" />
+                <Button Content="导出" Width="60" Height="25" />
+            </StackPanel>
+        </Border>
+
+        <!-- 中间趋势图区域 -->
+        <Border Grid.Row="1" Margin="0 10 0 0" Background="White" CornerRadius="4" BorderThickness="1" BorderBrush="#DDD">
+            <Grid>
+                <!-- 这里可以替换为 OxyPlot、LiveCharts 等图表控件 -->
+                <TextBlock Text="趋势图显示区域" FontSize="20" Foreground="#666" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

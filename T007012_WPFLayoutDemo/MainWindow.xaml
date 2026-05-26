@@ -1,0 +1,57 @@
+﻿<Window x:Class="T007012_WPFLayoutDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T007012_WPFLayoutDemo"
+        mc:Ignorable="d" 
+        Title="缺陷记录查询" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+
+        <!-- 顶部查询栏 -->
+        <Border Background="#F5F5F5" CornerRadius="4">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="10 0">
+                <TextBlock Text="时间范围:" VerticalAlignment="Center" Margin="0 0 5 0" />
+                <DatePicker Width="120" Height="25" Margin="0 0 10 0" />
+                <TextBlock Text="至" VerticalAlignment="Center" Margin="0 0 5 0" />
+                <DatePicker Width="120" Height="25" Margin="0 0 20 0" />
+
+                <TextBlock Text="产品条码:" VerticalAlignment="Center" Margin="0 0 5 0" />
+                <TextBox Width="150" Height="25" Margin="0 0 20 0" />
+
+                <Button Content="查询" Width="60" Height="25" Margin="0 0 10 0" />
+                <Button Content="导出" Width="60" Height="25" />
+            </StackPanel>
+        </Border>
+
+        <!-- 中间数据表格 -->
+        <DataGrid Grid.Row="1" Margin="0 10 0 0" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" GridLinesVisibility="Horizontal">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="序号" Width="60" Binding="{Binding Index}" />
+                <DataGridTextColumn Header="检测时间" Width="150" Binding="{Binding Time}" />
+                <DataGridTextColumn Header="产品条码" Width="150" Binding="{Binding Barcode}" />
+                <DataGridTextColumn Header="缺陷类型" Width="100" Binding="{Binding DefectType}" />
+                <DataGridTextColumn Header="缺陷位置" Width="100" Binding="{Binding Position}" />
+                <DataGridTextColumn Header="检测结果" Width="80" Binding="{Binding Result}" />
+                <DataGridTextColumn Header="工位" Width="80" Binding="{Binding Station}" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- 底部分页栏 -->
+        <Border Grid.Row="2" Background="#F5F5F5" CornerRadius="4">
+            <DockPanel Margin="10 0">
+                <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" Text="共 1256 条记录" />
+                <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">
+                    <Button Content="上一页" Width="60" Height="25" Margin="0 0 5 0" />
+                    <TextBlock Text="1/13" VerticalAlignment="Center" Margin="0 0 5 0" />
+                    <Button Content="下一页" Width="60" Height="25" />
+                </StackPanel>
+            </DockPanel>
+        </Border>
+    </Grid>
+</Window>

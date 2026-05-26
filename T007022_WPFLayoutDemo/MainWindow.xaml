@@ -1,0 +1,76 @@
+﻿<Window x:Class="T007022_WPFLayoutDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T007022_WPFLayoutDemo"
+        mc:Ignorable="d" Background="#F5F6F8"
+        Title="MainWindow" Height="250" Width="600">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <DockPanel>
+            <Button Content="清除所有强制" Width="100" Height="26" DockPanel.Dock="Right" />
+            <TextBlock Text="可强制输出IO" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" />
+        </DockPanel>
+
+        <UniformGrid Grid.Row="1" Columns="4" Margin="0,10,0,0">
+            <Border Margin="5" Background="White" CornerRadius="4" BorderThickness="1" BorderBrush="#DDD">
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="30" />
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Ellipse Width="12" Height="12" Fill="Red" Margin="0,0,5,0" />
+                        <TextBlock Text="OUT00 报警灯" VerticalAlignment="Center" />
+                    </StackPanel>
+                    <Button Grid.Row="1" Content="强制ON" Height="25" Margin="0,5,0,0" />
+                </Grid>
+            </Border>
+
+            <Border Margin="5" Background="White" CornerRadius="4" BorderThickness="1" BorderBrush="#DDD">
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="30" />
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Ellipse Width="12" Height="12" Fill="Red" Margin="0,0,5,0" />
+                        <TextBlock Text="OUT00 报警灯" VerticalAlignment="Center" />
+                    </StackPanel>
+                    <Button Grid.Row="1" Content="强制ON" Height="25" Margin="0,5,0,0" />
+                </Grid>
+            </Border>
+            <Border Margin="5" Background="White" CornerRadius="4" BorderThickness="1" BorderBrush="#DDD">
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="30" />
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Ellipse Width="12" Height="12" Fill="Red" Margin="0,0,5,0" />
+                        <TextBlock Text="OUT00 报警灯" VerticalAlignment="Center" />
+                    </StackPanel>
+                    <Button Grid.Row="1" Content="强制ON" Height="25" Margin="0,5,0,0" />
+                </Grid>
+            </Border>
+            <Border Margin="5" Background="White" CornerRadius="4" BorderThickness="1" BorderBrush="#DDD">
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="30" />
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Ellipse Width="12" Height="12" Fill="Red" Margin="0,0,5,0" />
+                        <TextBlock Text="OUT00 报警灯" VerticalAlignment="Center" />
+                    </StackPanel>
+                    <Button Grid.Row="1" Content="强制ON" Height="25" Margin="0,5,0,0" />
+                </Grid>
+            </Border>
+        </UniformGrid>
+    </Grid>
+</Window>
