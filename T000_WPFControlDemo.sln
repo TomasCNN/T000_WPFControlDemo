@@ -75,6 +75,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T007025_WPFLayoutGridSplitt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T007026_WPFLayoutDemo", "T007026_WPFLayoutDemo\T007026_WPFLayoutDemo.csproj", "{38E3C1BF-6EC3-48F2-9930-438F4AD60AFA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T008001_WPFProgressBarDemo", "T008001_WPFProgressBarDemo\T008001_WPFProgressBarDemo.csproj", "{86121F48-7FB6-49A6-9B6A-8F8D5D46C5FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -225,6 +227,10 @@ Global
 		{38E3C1BF-6EC3-48F2-9930-438F4AD60AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38E3C1BF-6EC3-48F2-9930-438F4AD60AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38E3C1BF-6EC3-48F2-9930-438F4AD60AFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86121F48-7FB6-49A6-9B6A-8F8D5D46C5FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86121F48-7FB6-49A6-9B6A-8F8D5D46C5FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86121F48-7FB6-49A6-9B6A-8F8D5D46C5FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86121F48-7FB6-49A6-9B6A-8F8D5D46C5FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
