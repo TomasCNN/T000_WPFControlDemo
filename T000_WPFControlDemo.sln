@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36915.13
+# Visual Studio Version 18
+VisualStudioVersion = 18.7.11925.98 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T000_WPFControlDemo", "T000_WPFControlDemo\T000_WPFControlDemo.csproj", "{F3BD1163-5A4B-4137-A15A-63B955894795}"
 EndProject
@@ -76,6 +76,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T007026_WPFLayoutDemo", "T007026_WPFLayoutDemo\T007026_WPFLayoutDemo.csproj", "{38E3C1BF-6EC3-48F2-9930-438F4AD60AFA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T008001_WPFProgressBarDemo", "T008001_WPFProgressBarDemo\T008001_WPFProgressBarDemo.csproj", "{86121F48-7FB6-49A6-9B6A-8F8D5D46C5FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T999999_WPFDataGridDemo", "..\T999999_WPFDataGridDemo\T999999_WPFDataGridDemo\T999999_WPFDataGridDemo.csproj", "{05F692FD-8A1B-4BA6-BAB6-B231581898F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -231,6 +233,10 @@ Global
 		{86121F48-7FB6-49A6-9B6A-8F8D5D46C5FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86121F48-7FB6-49A6-9B6A-8F8D5D46C5FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86121F48-7FB6-49A6-9B6A-8F8D5D46C5FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05F692FD-8A1B-4BA6-BAB6-B231581898F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05F692FD-8A1B-4BA6-BAB6-B231581898F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05F692FD-8A1B-4BA6-BAB6-B231581898F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05F692FD-8A1B-4BA6-BAB6-B231581898F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
